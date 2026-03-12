@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+/Users/ankurjangra2004/Desktop/java-dsa-practice/.metadata/.plugins/org.eclipse.jdt.core
+3302534234.index
+1865797976.index
+2657394288.index

@@ -11,6 +11,8 @@ This repository contains my daily practice of Data Structures and Algorithms usi
 - Reverse Array
 - Kadane’s Algorithm
 - Maximum Element
+- Prefix Sum Array
+- Subarray Sum Equals K
 
 ## Goal
 Solve 200+ DSA problems to improve problem solving and prepare for software engineering interviews.

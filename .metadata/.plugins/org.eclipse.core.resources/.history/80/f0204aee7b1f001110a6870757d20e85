@@ -1,0 +1,37 @@
+package arrays;
+
+public class SlidingWindow {
+	static int MaximumSumSubarraySizeK(int arr[],int k) {
+		int windowsum=0;
+		int maxsum=0;
+		for(int i=0;i<k;i++) 
+			windowsum +=arr[i];
+		
+			maxsum=windowsum;
+		for(int i=k;i<arr.length;i++) {
+			windowsum =windowsum -arr[i-k]+arr[i];
+			 maxsum= Math.max(maxsum, windowsum);
+		}
+		return maxsum;
+	}
+	
+	static int MaximumSumSubarray(int arr[],int k) {
+		int windowsum=0;
+		int maxsum=0;
+		for(int i=0;i<k;i++) 
+			windowsum+=arr[i];
+		
+		maxsum= windowsum;
+		for(int i=k;i<arr.length;i++) {
+			windowsum = windowsum-arr[i-k]+arr[i];
+			maxsum=Math.max(maxsum,windowsum);
+		}
+		return maxsum;
+	}
+public static void main(String args[]) {
+	int arr[]= {1,4,2,10,2,3,1,0,20};
+	int arr1[]= {4,4,4,4};
+	 System.out.println(MaximumSumSubarraySizeK(arr,4));
+	 System.out.println(MaximumSumSubarray(arr1,2));
+}
+}
